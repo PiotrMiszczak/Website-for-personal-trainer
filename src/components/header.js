@@ -6,8 +6,7 @@ import insta from '../images/instagram.svg'
 import face from '../images/facebook.svg'
 import phone from '../images/phone.svg'
 import mail from '../images/mail.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCamera } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const Header = () => (
