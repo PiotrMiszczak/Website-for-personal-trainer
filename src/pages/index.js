@@ -2,15 +2,19 @@ import * as React from "react"
 import { Link } from "gatsby"
 import '../scss/style.scss'
 import '../scss/normalize.css'
-import HeaderComponent from '../components/Header'
-import HelloComponent from '../components/Hello'
+import Header from '../components/Header'
+import Hello from '../components/Hello'
+import About from "../components/Aboutme"
+import Offer from "../components/Offer"
 
 
 
 const IndexPage = () => (
  <>
-   <HeaderComponent />
-   <HelloComponent />
+   <Header />
+   <Hello />
+   <About />
+   <Offer />
  </>
 )
 
