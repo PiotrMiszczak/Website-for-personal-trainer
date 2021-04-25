@@ -4,6 +4,9 @@ body{
     margin: 0;
     font-family: 'Exo';
 }
+html{
+    scroll-behavior: smooth;
+}
 .header{
     width: 100%;
     position:fixed;
@@ -12,7 +15,7 @@ body{
 }
 .header-bottom{
     height: 80px;
-    
+    box-shadow: 0 20px 20px hsla(0, 0%, 0%, 0.3) ;
     width: 100%;
     display: flex;
     background-color: white;
@@ -161,21 +164,27 @@ body{
 
 .about{
     display: block;
-    margin-top: 32px;
+    margin-top: 48px;
     padding-left: 100px;
     padding-right: 100px;
    
+   
     &-image{
-       width: 400px;
+       max-width: 400px;
+       width: 100%;
     }
     &-item{
         color: black;
         display: flex;
         justify-content: space-around;
 margin-bottom: 16px;
+margin-top: 16px;
      }
      &-text{
         flex-basis: 400px;
+        margin-left: 12px;
+        margin-right: 12px;
+        max-height: 270px;
      }
 }
 
@@ -184,6 +193,7 @@ margin-bottom: 16px;
     font-size: 36px;
     font-weight: normal;
     margin-top: 32px;
+    
     margin: 0 auto;
     text-align: center;
    
@@ -198,9 +208,37 @@ margin-bottom: 16px;
         height: 500px;
         display: flex;
         justify-content: space-around;
+       padding-top: 50px;
+       margin-top: 32px;
     }
-    &-item img{
-        width:300px;
-    
+    &-item{
+        
+        background-color: white;
+        height: 300px;
+        padding: 16px;
+        padding-bottom: 48px;
+        margin-right: 4px;
+        margin-left:4px;
+        box-shadow: 0 20px 20px hsla(0, 0%, 0%, 0.3) ;
+        & p{
+            text-align: center;
+            color: rgb(28, 176, 230);
+            font-weight: bolder;
+            letter-spacing: 3px;
+        }
     }
+    &-image{
+        max-width: 250px;
+        width: 100%;
+
+    }
+    &-list{
+        list-style-image: url(../images/Vector.svg);
+
+        &--item{
+            margin-bottom: 5px;
+        }
+        
+    }
+
 }
