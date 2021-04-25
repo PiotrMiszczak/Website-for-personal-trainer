@@ -1,0 +1,9 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/about.jpg": "static/about-b6c037f1d55fe6e16bef7409858663dd.jpg",
+  "static/diet.jpg": "static/diet-93e11e0862c7586086c910136cc062c8.jpg",
+  "static/doping.jpg": "static/doping-ed0e931c2e14606015a8bda0547e58aa.jpg",
+  "static/logo.png": "static/logo-3af46f524d732caff7bf2a03a722a12d.png",
+  "static/workout.jpg": "static/workout-e0b71cc6c50ea20abf36b3a6448f8e9e.jpg"
+}
