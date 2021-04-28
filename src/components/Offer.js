@@ -1,9 +1,9 @@
 import * as React from "react"
 import '../scss/style.scss'
 import about from '../images/about.jpg'
-import diet from '../images/diet.jpg'
-import doping from '../images/doping.jpg'
-import workout from '../images/workout.jpg'
+import diet from '../images/diet.svg'
+import doping from '../images/doping.svg'
+import workout from '../images/workout.svg'
 
 
 
@@ -15,7 +15,7 @@ const Offer = () => (
       <section className="offer-content">
 
           <div className="offer-item">
-              <img className="offer-image" src={diet}></img>
+              <img className="offer-image" src={workout}></img>
               <p>Trening</p>
               <ul className="offer-list">
                   <li className="offer-list--item">Coś tam</li>
@@ -25,7 +25,7 @@ const Offer = () => (
               </ul>
           </div>
           <div className="offer-item">
-          <img className="offer-image" src={workout}></img>
+          <img className="offer-image" src={diet}></img>
           <p>Dieta</p>
           <ul className="offer-list">
           <li className="offer-list--item">Coś tam</li>
