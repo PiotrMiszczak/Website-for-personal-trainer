@@ -3,7 +3,10 @@
   "render-page.js.map": "render-page.js.map",
   "static/about.jpg": "static/about-a2a05e97a8e60d9d785ce2f71158cdbe.jpg",
   "static/diet.jpg": "static/diet-93e11e0862c7586086c910136cc062c8.jpg",
+  "static/diet.svg": "static/diet-9d7a213c939028f3925c6bd62a69426c.svg",
   "static/doping.jpg": "static/doping-ed0e931c2e14606015a8bda0547e58aa.jpg",
+  "static/doping.svg": "static/doping-0bf153260d79f95e7fc78834ba3094c8.svg",
   "static/logo.png": "static/logo-3af46f524d732caff7bf2a03a722a12d.png",
-  "static/workout.jpg": "static/workout-e0b71cc6c50ea20abf36b3a6448f8e9e.jpg"
+  "static/workout.jpg": "static/workout-e0b71cc6c50ea20abf36b3a6448f8e9e.jpg",
+  "static/workout.svg": "static/workout-0dbfff608a8263639261b8b80714076a.svg"
 }
