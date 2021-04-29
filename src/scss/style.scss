@@ -139,7 +139,7 @@ html{
     min-height: 400px;
     padding-bottom: 20px;
     margin-top: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     background-image: linear-gradient(
         to left,
         hsla(0, 0%, 4%, 0.907),
@@ -152,7 +152,7 @@ html{
     justify-content: flex-end;
     
 &-content{
-    min-width: 50%;
+    width: 50%;
 
     margin-right: 6.25rem;
     margin-top: 60px;
@@ -197,13 +197,15 @@ html{
 
 // ABOUT
 
-
+.heading-contact{
+    color:white
+}
 
 .heading-secondary{
     color:#1CB0E6;
     font-size: 2.25rem;
     font-weight: normal;
-    margin-top: 32px;
+    margin-top: 16px;
     
     margin: 0 auto;
     text-align: center;
@@ -249,6 +251,7 @@ html{
 }
 
 .offer{
+    margin-top: 20px;
     display: block;
     &-content{
         background-color: #222;
@@ -256,11 +259,10 @@ html{
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-       padding-top: 50px;
-       padding-bottom: 50px;
+       padding: 3.125rem 4rem;
        margin-top: 32px;
 
-       @media(max-width:600px){
+       @media(max-width:645px){
            display: block;
        }
     }
@@ -276,7 +278,7 @@ html{
         box-shadow: 0 40px 40px hsla(0, 0%, 0%, 0.3) ;
 border-radius: 10px;
 
-@media(max-width:600px){
+@media(max-width:645px){
     width: 50%;
     margin: 0 auto;
     margin-bottom: 12px;
@@ -309,3 +311,95 @@ border-radius: 10px;
     }
 
 }
+
+.contact{
+    display: block;
+    &-icon{
+        height: 2.5rem;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        &--wrapper{
+            margin-top:2rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    
+    
+    &-wrapper{
+        background-color: rgb(28, 176, 230);
+        padding: 50px 4rem;
+        margin: 0 auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        border-radius: 10px;
+        box-shadow: 0 20px 20px hsla(0, 0%, 0%, 0.503) ;
+        
+        padding: 50px;
+        width: 50%;
+    }
+
+    &-form{
+        
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 300px;
+    
+    & label{
+        color: white;
+        margin-bottom: 0.25rem;
+    }
+    & input{
+        height: 1.8rem;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+        border: none;
+        font-size: 1rem;
+    }
+    & textarea  {
+        height: 7rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        border: none;
+        font-size: 1rem;
+    }
+    & button  {
+        height: 1.8rem;
+        border-radius: 30px;
+       font-family: 'Exo';
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        transition: all 500ms cubic-bezier(0.250, 0.250, 0.110, 0.965);
+        &:hover{
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            transform: translateY(-3px);
+            box-shadow: 2px 2px 2px black;
+            transition: all 500ms cubic-bezier(0.250, 0.250, 0.110, 0.965)
+
+        }
+        &:active{
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            transform: translateY(-2px);
+            box-shadow: 1.5px 1.5px 1.5px black;
+            transition: all 500ms cubic-bezier(0.250, 0.250, 0.110, 0.965)
+
+        }
+    }
+    
+    }
+}
+
+// <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

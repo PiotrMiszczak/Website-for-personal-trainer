@@ -6,6 +6,8 @@ import Header from '../components/Header'
 import Hello from '../components/Hello'
 import About from "../components/Aboutme"
 import Offer from "../components/Offer"
+import ContactForm from "../components/ContactForm"
+
 
 
 
@@ -15,6 +17,7 @@ const IndexPage = () => (
    <Hello />
    <About />
    <Offer />
+   <ContactForm />
    
  </>
 )
