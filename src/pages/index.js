@@ -7,17 +7,21 @@ import Hello from '../components/Hello'
 import About from "../components/Aboutme"
 import Offer from "../components/Offer"
 import ContactForm from "../components/ContactForm"
+import Footer from "../components/Footer"
 
 
 
 
 const IndexPage = () => (
  <>
-   <Header />
+   <Header location='home' />
+   <main>
    <Hello />
    <About />
    <Offer />
    <ContactForm />
+   </main>
+   <Footer />
    
  </>
 )

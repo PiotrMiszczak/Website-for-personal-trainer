@@ -9,12 +9,12 @@ import mail from '../images/mail.svg'
 
 
 
-const Header = () => (
+const Header = (props) => (
  <>
    <header className="header">
      <div className="header-top">
-       <Link target="_blank" to='https://www.instagram.com/pelcbartlomiej/?hl=pl' className="link link-social"><img className='icon icon-social' src={insta}></img></Link>
-       <Link target="_blank" to='https://www.facebook.com/TrenerBartlomiejPelc' className=" link link-social"><img className='icon icon-social' src={face}></img></Link>
+       <a target="_blank" href='https://www.instagram.com/pelcbartlomiej/?hl=pl' className="link link-social"><img className='icon icon-social' src={insta}></img></a>
+       <a target="_blank" href='https://www.facebook.com/TrenerBartlomiejPelc' className=" link link-social"><img className='icon icon-social' src={face}></img></a>
       <img className='icon' src={phone}></img><span>731 558 761</span>
       <img className='icon' src={mail}></img><span>pro.pelcu@gmail.com
 </span> 
@@ -27,7 +27,7 @@ const Header = () => (
                     <span class="heading-primary--sub">Trener personalny</span>
                 </h1>
                 </div>
-                <Link to="#" className="link link-blog">BLOG</Link></div>
+                <Link to={props.location=='blog' ? '/' : '/blog'} className="link link-blog">{props.location=='blog' ? 'HOME' : 'BLOG'}</Link></div>
     
    </header>
  </>

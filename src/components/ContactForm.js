@@ -16,8 +16,8 @@ fontSize:'2rem'}} className="heading-secondary">Get in touch</h3>
           <button type="submit">Wyślij</button>
       </form>
       <div className="contact-icon--wrapper">
-          <img className="contact-icon" src={facebook}></img>
-          <img className="contact-icon" src={instagram}></img>
+<a target='_blank' className="link" href='https://www.facebook.com/TrenerBartlomiejPelc'><img className="contact-icon" src={facebook}></img></a>
+         <a target='_blank' className="link" href='https://www.instagram.com/pelcbartlomiej/?hl=pl'><img className="contact-icon" src={instagram}></img></a>
       </div>
       </div>
      

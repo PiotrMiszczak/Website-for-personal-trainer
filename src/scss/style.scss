@@ -264,6 +264,8 @@ html{
 
        @media(max-width:645px){
            display: block;
+           padding: 3.125rem 2rem;
+           
        }
     }
     &-item{
@@ -275,11 +277,11 @@ html{
         padding-bottom: 12px;
         margin-right: 4px;
         margin-left:4px;
-        box-shadow: 0 40px 40px hsla(0, 0%, 0%, 0.3) ;
+        box-shadow: 0 40px 40px hsla(0, 1%, 20%, 0.3) ;
 border-radius: 10px;
 
 @media(max-width:645px){
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 12px;
 }
@@ -340,9 +342,12 @@ border-radius: 10px;
         margin-bottom: 4rem;
         border-radius: 10px;
         box-shadow: 0 20px 20px hsla(0, 0%, 0%, 0.503) ;
-        
         padding: 50px;
         width: 50%;
+
+        @media(max-width:450px){
+            padding: 25px 2rem;
+        }
     }
 
     &-form{
@@ -378,6 +383,8 @@ border-radius: 10px;
         border: 1px solid white;
         background-color: transparent;
         color: white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
         transition: all 500ms cubic-bezier(0.250, 0.250, 0.110, 0.965);
         &:hover{
             background-color: white;
@@ -399,6 +406,18 @@ border-radius: 10px;
         }
     }
     
+    }
+}
+
+.footer{
+    padding: 1rem;
+    color: grey;
+    margin: 0 auto;
+    width: 80%;
+    border-top: 1px solid grey;
+
+    & p{
+        text-align: center;
     }
 }
 
