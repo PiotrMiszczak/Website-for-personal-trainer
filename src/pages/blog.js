@@ -9,7 +9,7 @@ import Article from '../components/Article'
 
 
 
-const IndexPage = () => {
+const BlogPage = () => {
     return(
         <> 
    <Header location="blog" />
@@ -22,4 +22,4 @@ const IndexPage = () => {
  </>
 )}
 
-export default IndexPage
+export default BlogPage
