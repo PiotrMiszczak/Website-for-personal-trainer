@@ -347,6 +347,7 @@ border-radius: 10px;
 
         @media(max-width:450px){
             padding: 25px 2rem;
+            width: 80%;
         }
     }
 
@@ -487,4 +488,37 @@ border-radius: 10px;
     z-index: 10;
 }
 
+[data-aos="new-animation-left"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+  
+    @media screen and (min-width: 768px) {
+      transform: translateX(100px);
+  
+      &.aos-animate {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  [data-aos="new-animation-right"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+  
+    @media screen and (min-width: 768px) {
+      transform: translateX(-100px);
+  
+      &.aos-animate {
+        transform: translateX(0);
+      }
+    }
+  }
 // <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
