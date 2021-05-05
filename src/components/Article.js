@@ -7,9 +7,8 @@ import { useTransition, animated } from "react-spring";
 
 
 
-function Article(){
+function Article(props){
 
-    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac odio eget tortor eleifend tristique. Duis a leo sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vestibulum egestas aliquam. Nam accumsan erat et condimentum ullamcorper. Etiam vel tellus ac augue ornare ultricies."
     const [hover, setHover] = useState(false);
     const transitions = useTransition(hover, {
       from: { opacity: 0 },
@@ -20,19 +19,21 @@ function Article(){
     const mask = transitions(
       (styles,item) =>
         item && (
+          
           <animated.div
             style={styles}
             className="mask"
           ></animated.div>
+
         )
     );
     return(
         <article onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)} className='article-preview'>
             {mask}
-        <img className='article-preview--image' src={photo}></img>
+        <img className='article-preview--image' src={props.image}></img>
         <div className='article-preview--content'>
-        <span className='article-preview--title'>Dlaczego nie warto robić cardio?</span>
-        <p className='article-preview--text'>`{text.slice(0,180)}...`</p>
+        <span className='article-preview--title'>{props.title}</span>
+        <p className='article-preview--text'>`{props.text.slice(0,105)}...`</p>
         
         </div>
    

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import '../scss/style.scss'
 import '../scss/normalize.css'
 import Header from '../components/Header'
@@ -14,7 +14,18 @@ const BlogPage = () => {
         <> 
    <Header location="blog" />
    <section className='blog'>
-   <Article />
+     <StaticQuery query={graphql`query{pelcu{
+  posts{
+
+  title,
+  text,
+    image{
+    
+url
+  }
+  
+  }}}`} render={({pelcu: {posts}})=>posts.map(item=><Article title={item.title} text={item.text} image={item.image[0].url} />)} />
+   
    </section>
    
 

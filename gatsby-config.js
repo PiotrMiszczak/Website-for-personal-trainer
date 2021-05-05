@@ -21,6 +21,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "PELCU",
+        fieldName: "pelcu",
+        url: "https://api-eu-central-1.graphcms.com/v2/ckoaivfcmv3cf01yz93io9h7u/master",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
