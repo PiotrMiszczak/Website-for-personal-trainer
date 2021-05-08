@@ -15,7 +15,7 @@ import Footer from "../components/Footer"
 const IndexPage = () => (
  <>
    <Header location='home' />
-   <main>
+   <main className="main">
    <Hello />
    <About />
    <Offer />
