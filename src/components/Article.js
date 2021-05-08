@@ -3,12 +3,15 @@ import {useState} from 'react'
 import '../scss/style.scss'
 import photo from '../images/article.jpg'
 import { useTransition, animated } from "react-spring";
+import slugify from 'slugify'
+import { Link } from "gatsby";
 
 
 
 
 function Article(props){
 
+  const slug = `/${slugify(props.title)}`
     const [hover, setHover] = useState(false);
     const transitions = useTransition(hover, {
       from: { opacity: 0 },
@@ -19,11 +22,12 @@ function Article(props){
     const mask = transitions(
       (styles,item) =>
         item && (
-          
+          <Link to={slug}>
           <animated.div
             style={styles}
             className="mask"
           ></animated.div>
+          </Link>
 
         )
     );

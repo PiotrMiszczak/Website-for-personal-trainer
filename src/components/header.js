@@ -23,8 +23,8 @@ const Header = (props) => (
      <div className="header-bottom">
        <div className="heading-container"><img className="logo" src={logo}></img>
    <h1 className="heading-primary">
-                    <span class="heading-primary--main">Bartłomiej Pelc</span>
-                    <span class="heading-primary--sub">Trener personalny</span>
+                    <span className="heading-primary--main">Bartłomiej Pelc</span>
+                    <span className="heading-primary--sub">Trener personalny</span>
                 </h1>
                 </div>
                 <Link to={props.location=='blog' ? '/' : '/blog'} className="link link-blog">{props.location=='blog' ? 'HOME' : 'BLOG'}</Link></div>

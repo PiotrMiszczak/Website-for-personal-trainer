@@ -491,6 +491,28 @@ border-radius: 10px;
         
     }
 }
+
+.article-post{
+    margin-left:auto;
+    margin-right:auto;
+    
+    padding:2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+   
+    &--text{
+        word-break:break-all;
+        width: 100%;
+    }
+    &--title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .mask{
     position: absolute;
     top: 0;
