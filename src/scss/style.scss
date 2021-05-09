@@ -27,17 +27,20 @@ html{
 }
 .header{
     width: 100%;
+    overflow: hidden;
+    box-shadow:0 10px 10px rgba(0, 0, 0, 0.304);
     
 }
 .header-bottom{
     height: 80px;
-    box-shadow: 0 20px 20px hsla(0, 0%, 0%, 0.3) ;
+    
     width: 100%;
     display: flex;
     background-color: white;
     align-items: center;
     justify-content: space-between;
     padding: 0.575rem;
+    
 }
 .header-top{
     height: 15px;

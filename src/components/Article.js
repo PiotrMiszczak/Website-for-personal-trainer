@@ -22,16 +22,17 @@ function Article(props){
     const mask = transitions(
       (styles,item) =>
         item && (
-          <Link to={slug}>
+          
           <animated.div
             style={styles}
             className="mask"
           ></animated.div>
-          </Link>
+        
 
         )
     );
     return(
+      <Link className="link" to={slug}>
         <article onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)} className='article-preview'>
             {mask}
         <img className='article-preview--image' src={props.image}></img>
@@ -42,6 +43,7 @@ function Article(props){
         </div>
    
     </article>
+    </Link>
     
 
 
