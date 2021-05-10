@@ -171,6 +171,11 @@ html{
         width: 80%;
        
     }
+    @media(max-height:420px){
+        margin-right: 20px;
+        margin-top: 20px;
+        width: 80%;
+    }
 }
 &-heading{
     color:#1CB0E6;
