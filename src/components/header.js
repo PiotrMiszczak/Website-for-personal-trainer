@@ -27,7 +27,11 @@ const Header = (props) => (
                     <span className="heading-primary--sub">Trener personalny</span>
                 </h1>
                 </div>
-                <Link to={props.location=='blog' ? '/' : '/blog'} className="link link-blog">{props.location=='blog' ? 'HOME' : 'BLOG'}</Link></div>
+                <div className="link-wrapper">
+                <Link to={props.location=='home' ? '/blog' : '/'} className="link link-blog">{props.location=='home' ? 'BLOG' : 'HOME'}</Link>
+               {props.location == 'post' ? <Link className="link link-blog" to='/blog'>BLOG</Link> : null}
+               </div>
+                </div>
     
    </header>
  </>

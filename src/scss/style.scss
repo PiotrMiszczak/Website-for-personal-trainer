@@ -55,14 +55,14 @@ html{
     margin-top: 3px;
 }
 .link-blog{
-    
     font-size: 1.25rem;
     
-    margin-right: 100px; 
-    @media(max-width:720px){
-        margin-right: 40px;
-    }
+    margin-left:0;
+    margin-right: 100px;
     transition: all 0.1s ease-in-out;
+    @media(max-width:720px){
+        margin-right: 20px;
+    }
     &:hover{
         transform: scale(1.1);
         color:#1CB0E6;
@@ -70,10 +70,18 @@ html{
 
     }
 }
+.link_wrapper{
+    
+    margin-right: 130px; 
+    @media(max-width:720px){
+        margin-right: 40px;
+    }
+}
 .link{
     text-decoration: none;
     color: black;
 }
+
 .icon{
     height: 15px;
     margin-left: 10px;
@@ -479,7 +487,7 @@ border-radius: 10px;
         font-size: 1rem;
         font-style: oblique;
         width: 100%;
-        word-break:break-all;
+        
         
         @media(max-width:530px){
             font-size: 0.8rem;
@@ -502,16 +510,16 @@ border-radius: 10px;
 .article-post{
     margin-left:auto;
     margin-right:auto;
-    
+    position: relative;
     padding:2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70vw;
+    max-width: 80vw;
    
     &--text{
-        word-break:break-all;
+       
         width: 100%;
         line-height: 2rem;
         letter-spacing: 2px;
