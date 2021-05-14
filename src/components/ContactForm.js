@@ -16,9 +16,9 @@ function Contact(){
 <h3 style={{color:"white",
 fontSize:'2rem'}} className="heading-secondary">Get in touch</h3>
       <form method='POST' action='https://getform.io/f/89a40498-60dd-4b75-bf15-e735c847ad23'  className="contact-form">
-          <label className="contact-input" for="name">Imię</label><input  required type='text' name='name' id='name' />
-          <label className="contact-input" for="name">E-mail</label><input   required type='email' name='email' id='email' />
-          <label className="contact-input" for="name">Wiadomość</label><textarea  required name='message' className="contact-text"></textarea>
+          <label className="contact-input" htmlFor="name">Imię</label><input  required type='text' name='name' id='name' />
+          <label className="contact-input" htmlFor="name">E-mail</label><input   required type='email' name='email' id='email' />
+          <label className="contact-input" htmlFor="name">Wiadomość</label><textarea  required name='message' className="contact-text"></textarea>
           <button type="submit">Wyślij</button>
       </form>
       <div className="contact-icon--wrapper">

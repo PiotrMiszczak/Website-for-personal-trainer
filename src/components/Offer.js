@@ -26,7 +26,7 @@ function Offer(){
       <section className="offer-content">
 
           <div data-aos="new-animation-right" className="offer-item">
-              <img className="offer-image" src={workout}></img>
+              <img alt="man doing pushups" className="offer-image" src={workout}></img>
               <p>Trening</p>
               <ul className="offer-list">
                   <li className="offer-list--item">Lorem ipsum</li>
@@ -36,7 +36,7 @@ function Offer(){
               </ul>
           </div>
           <div data-aos="fade" className="offer-item">
-          <img className="offer-image" src={diet}></img>
+          <img alt="plate of food" className="offer-image" src={diet}></img>
           <p>Dieta</p>
           <ul className="offer-list">
           <li className="offer-list--item">Lorem ipsum</li>
@@ -46,7 +46,7 @@ function Offer(){
               </ul>
           </div>
           <div data-aos="new-animation-left" className="offer-item">
-          <img className="offer-image" src={doping}></img>
+          <img alt="container of pills" className="offer-image" src={doping}></img>
           <p>Suplementacja</p>
           <ul className="offer-list">
           <li className="offer-list--item">Lorem ipsum</li>

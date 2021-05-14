@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Bartłomiej Pelc | Trener personalny`,
+    description: `description check`,
+    url:`https://piotrmiszczak.github.io/Website-for-personal-trainer`,
+    image: `https://www.google.com/url?sa=i&url=https%3A%2F%2Feconomictimes.indiatimes.com%2Fmagazines%2Fpanache%2Ftime-to-get-in-shape-here-are-six-easy-workout-routines-and-exercises-that-you-can-follow-while-in-quarantine%2Farticleshow%2F74746918.cms&psig=AOvVaw225NMCX96qoDgpUg_stRjx&ust=1621027767493000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiyxpvNx_ACFQAAAAAdAAAAABAD`,
   },
   pathPrefix: "/Website-for-personal-trainer",
   plugins: [
@@ -27,8 +28,14 @@ module.exports = {
         typeName: "PELCU",
         fieldName: "pelcu",
         url: "https://api-eu-central-1.graphcms.com/v2/ckoaivfcmv3cf01yz93io9h7u/master",
+      }},
+      {
+        resolve: `gatsby-plugin-manifest`,
+        options: {
+          icon: `src/images/logo.png`,
+        },
       },
-    },
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
