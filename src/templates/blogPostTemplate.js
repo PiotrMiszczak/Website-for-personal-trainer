@@ -14,7 +14,7 @@ function blogPostTemplate({pageContext:{data}}){
  <>
 
    <Header location='post' />
-   <div style={{backgroundImage:`url(${src})`,width:'100%', height:'70vh', backgroundRepeat:'no-repeat', backgroundSize:'cover'}}></div>
+   <div style={{backgroundImage:`url(${src})`,width:'100%', height:'70vh', backgroundPosition:'30% 30%', backgroundRepeat:'no-repeat', backgroundSize:'cover'}}></div>
    <article className='article-post'>
     
    <h1 className='article-post--title'>{data.title}</h1>

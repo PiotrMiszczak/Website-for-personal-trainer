@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import '../scss/style.scss'
-import logo from '../images/logo.png'
 import insta from '../images/instagram.svg'
 import face from '../images/facebook.svg'
 import phone from '../images/phone.svg'
 import mail from '../images/mail.svg'
+import {StaticImage} from 'gatsby-plugin-image'
 
 
 
@@ -21,7 +21,7 @@ const Header = (props) => (
 
      </div>
      <div className="header-bottom">
-       <div className="heading-container"><img className="logo" src={logo}></img>
+       <div className="heading-container"><StaticImage src='../images/logo.png' imgClassName="logo" alt="logo icon" loading='eager' />
    <h1 className="heading-primary">
                     <span className="heading-primary--main">Bartłomiej Pelc</span>
                     <span className="heading-primary--sub">Trener personalny</span>

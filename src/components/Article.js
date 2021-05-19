@@ -35,7 +35,7 @@ function Article(props){
       <Link className="link" to={slug}>
         <article onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)} className='article-preview'>
             {mask}
-        <img className='article-preview--image' src={props.image}></img>
+        <img className='article-preview--image' src={photo}></img>
         <div className='article-preview--content'>
         <span className='article-preview--title'>{props.title}</span>
         <p className='article-preview--text'>`{props.text.slice(0,105)}...`</p>
