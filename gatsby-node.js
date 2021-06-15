@@ -19,7 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     blogPostQuery.data.pelcu.posts.forEach(post => {
         createPage({
-            path:slugify(post.title),
+            path:`/blog/${slugify(post.title)}`,
             component: blogPostTemplate,
             context:{
                 data:post,

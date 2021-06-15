@@ -14,7 +14,10 @@ import Seo from '../components/seo'
 
 
 const IndexPage = () => (
+
+  
  <>
+ 
  <Seo />
    <Header location='home' />
    <main className="main">

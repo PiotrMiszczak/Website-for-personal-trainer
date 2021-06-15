@@ -21,7 +21,7 @@ const Header = (props) => (
 
      </div>
      <div className="header-bottom">
-       <div className="heading-container"><StaticImage src='../images/logo.png' imgClassName="logo" alt="logo icon" loading='eager' />
+       <div className="heading-container"><StaticImage placeholder='blurred' src='../images/logo.png' className="logo" alt="logo icon" loading='eager' />
    <h1 className="heading-primary">
                     <span className="heading-primary--main">Bartłomiej Pelc</span>
                     <span className="heading-primary--sub">Trener personalny</span>

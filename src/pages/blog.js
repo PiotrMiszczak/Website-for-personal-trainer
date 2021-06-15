@@ -4,7 +4,7 @@ import '../scss/style.scss'
 import '../scss/normalize.css'
 import Header from '../components/Header'
 import Article from '../components/Article'
-
+import Seo from '../components/seo'
 
 
 
@@ -12,6 +12,7 @@ import Article from '../components/Article'
 const BlogPage = () => {
     return(
         <> 
+        <Seo title="Blog | Bartłomiej Pelc" />
    <Header location="blog" />
    <section className='blog'>
      <StaticQuery query={graphql`query{pelcu{

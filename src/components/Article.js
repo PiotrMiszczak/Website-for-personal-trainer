@@ -11,7 +11,7 @@ import { Link } from "gatsby";
 
 function Article(props){
 
-  const slug = `/${slugify(props.title)}`
+  const slug = `/blog/${slugify(props.title)}`
     const [hover, setHover] = useState(false);
     const transitions = useTransition(hover, {
       from: { opacity: 0 },
