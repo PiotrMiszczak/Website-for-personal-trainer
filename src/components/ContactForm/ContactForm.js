@@ -1,7 +1,7 @@
 import * as React from "react"
-import { useState } from "react"
-import facebook from "../images/facebook-app-logo.svg"
-import instagram from "../images/instagram.svg"
+import './style.scss'
+import facebook from "../../images/facebook-app-logo.svg"
+import instagram from "../../images/instagram.svg"
 
 function Contact() {
   return (

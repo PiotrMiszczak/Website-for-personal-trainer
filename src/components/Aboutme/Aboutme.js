@@ -1,6 +1,7 @@
 import * as React from "react"
-import "../scss/style.scss"
-import about from "../images/about.jpg"
+import about from "../../images/about.jpg"
+import './style.scss'
+
 
 const Aboutme = () => (
   <>

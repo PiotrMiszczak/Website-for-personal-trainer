@@ -1,5 +1,5 @@
 import * as React from "react"
-import "../scss/style.scss"
+import './style.scss'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"

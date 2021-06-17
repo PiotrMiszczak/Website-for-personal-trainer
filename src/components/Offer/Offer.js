@@ -1,11 +1,11 @@
 import * as React from "react"
 import { useEffect } from "react"
-import "../scss/style.scss"
+import './style.scss'
 import AOS from "aos"
 import "aos/dist/aos.css"
-import diet from "../images/diet.svg"
-import doping from "../images/doping.svg"
-import workout from "../images/workout.svg"
+import diet from "../../images/diet.svg"
+import doping from "../../images/doping.svg"
+import workout from "../../images/workout.svg"
 
 function Offer() {
   useEffect(() => {
@@ -29,7 +29,7 @@ function Offer() {
               src={workout}
             ></img>
             <p>Trening</p>
-            <div className="offer-list-wrapper">
+            
               <ul className="offer-list">
                 <li className="offer-list--item">
                   Rozpisanie indywidualnego planu pod słabe punkty
@@ -41,12 +41,12 @@ function Offer() {
                   Konsultacja ze szczegółowym omówieniem ćwiczeń i techniki
                 </li>
               </ul>
-            </div>
+            
           </div>
           <div data-aos="fade" className="offer-item">
             <img alt="plate of food" className="offer-image" src={diet}></img>
             <p>Dieta</p>
-            <div className="offer-list-wrapper">
+            
               <ul className="offer-list">
                 <li className="offer-list--item">
                   Rozpisanie posiłków z uwzględnieniem kaloryczności i
@@ -59,7 +59,7 @@ function Offer() {
                   Program na zrzucenie kilogramów jedząc to co się lubi
                 </li>
               </ul>
-            </div>
+            
           </div>
           <div data-aos="new-animation-left" className="offer-item">
             <img
@@ -68,7 +68,7 @@ function Offer() {
               src={doping}
             ></img>
             <p>Suplementacja</p>
-            <div className="offer-list-wrapper">
+            
               <ul className="offer-list">
                 <li className="offer-list--item">
                   Rozpisanie suplementacji pod indywidualne cele
@@ -82,7 +82,7 @@ function Offer() {
                   działają
                 </li>
               </ul>
-            </div>
+            
           </div>
         </section>
       </section>

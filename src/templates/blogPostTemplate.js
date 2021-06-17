@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import "../scss/style.scss"
 import "../scss/normalize.css"
-import Header from "../components/Header"
+import Header from "../components/Header/Header.js"
 import Seo from "../components/seo"
 
 function blogPostTemplate({ pageContext: { data } }) {

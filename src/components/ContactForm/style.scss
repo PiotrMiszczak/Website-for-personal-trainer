@@ -1,0 +1,92 @@
+@import "../../scss/variables";
+.contact {
+    display: block;
+    &-icon {
+      height: 2.5rem;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+      }
+  
+      &--wrapper {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  
+    &-wrapper {
+      background-color: $MAIN_THEME;
+      padding: 50px 4rem;
+      margin: 0 auto;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      border-radius: 10px;
+      box-shadow: 0 20px 20px hsla(0, 0%, 0%, 0.503);
+      padding: 50px;
+      width: 50%;
+  
+      @media (max-width: 450px) {
+        padding: 25px 2rem;
+        width: 80%;
+      }
+    }
+  
+    &-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      min-height: 300px;
+  
+      & label {
+        color: white;
+        margin-bottom: 0.25rem;
+      }
+      & input {
+        height: 1.8rem;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+        border: none;
+        font-size: 1rem;
+      }
+      & textarea {
+        height: 7rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        border: none;
+        font-size: 1rem;
+      }
+      & button {
+        height: 1.8rem;
+        border-radius: 30px;
+        font-family: "Exo";
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transition: all 500ms cubic-bezier(0.25, 0.25, 0.11, 0.965);
+        &:hover {
+          background-color: white;
+          color: black;
+          font-weight: bold;
+          transform: translateY(-3px);
+          box-shadow: 2px 2px 2px black;
+          transition: all 500ms cubic-bezier(0.25, 0.25, 0.11, 0.965);
+        }
+        &:active {
+          background-color: white;
+          color: black;
+          font-weight: bold;
+          transform: translateY(-2px);
+          box-shadow: 1.5px 1.5px 1.5px black;
+          transition: all 500ms cubic-bezier(0.25, 0.25, 0.11, 0.965);
+        }
+      }
+    }
+  }
+  

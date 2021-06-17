@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useState } from "react"
-import "../scss/style.scss"
-import photo from "../images/article.jpg"
+import './style.scss'
+
 import { useTransition, animated } from "react-spring"
 import slugify from "slugify"
 import { Link } from "gatsby"
@@ -27,7 +27,7 @@ function Article(props) {
         className="article-preview"
       >
         {mask}
-        <img className="article-preview--image" src={photo}></img>
+        <img className="article-preview--image" src={props.image}></img>
         <div className="article-preview--content">
           <span className="article-preview--title">{props.title}</span>
           <p className="article-preview--text">
