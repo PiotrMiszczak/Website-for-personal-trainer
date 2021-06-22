@@ -5,7 +5,7 @@ import insta from "../../images/instagram.svg"
 import face from "../../images/facebook.svg"
 import phone from "../../images/phone.svg"
 import mail from "../../images/mail.svg"
-import { StaticImage } from "gatsby-plugin-image"
+import logo from "../../images/logo.svg"
 
 const Header = props => (
   <>
@@ -32,13 +32,7 @@ const Header = props => (
       </div>
       <div className="header-bottom">
         <div className="heading-container">
-          <StaticImage
-            placeholder="blurred"
-            src="../../images/logo.png"
-            className="logo"
-            alt="logo"
-            loading="eager"
-          />
+          <img src={logo} className='logo' />
           <h1 className="heading-primary">
             <span className="heading-primary--main">Bartłomiej Pelc</span>
             <span className="heading-primary--sub">Trener personalny</span>
