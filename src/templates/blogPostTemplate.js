@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import "../scss/style.scss"
 import "../scss/normalize.css"
 import Header from "../components/Header/Header.js"

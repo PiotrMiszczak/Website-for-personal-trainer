@@ -27,7 +27,7 @@ function Article(props) {
         className="article-preview"
       >
         {mask}
-        <img className="article-preview--image" src={props.image}></img>
+        <img alt='article preview' className="article-preview--image" src={props.image}></img>
         <div className="article-preview--content">
           <span className="article-preview--title">{props.title}</span>
           <p className="article-preview--text">

@@ -3,8 +3,7 @@ module.exports = {
     title: `Bartłomiej Pelc | Trener personalny`,
     description: `Treningi personalne na terenie Warszawy, prowadzenie on-line, konsultacje. Zdrowe i wysportowane ciało wcale nie jest takie trudne do
     osiągnięcia. Jeśli zmagasz się z nadwagą i złym samopoczuciem, rozpocznij współpracę z trenerem jeszcze dziś!`,
-    url:`https://piotrmiszczak.github.io/Website-for-personal-trainer`,
-    image: `https://www.google.com/url?sa=i&url=https%3A%2F%2Feconomictimes.indiatimes.com%2Fmagazines%2Fpanache%2Ftime-to-get-in-shape-here-are-six-easy-workout-routines-and-exercises-that-you-can-follow-while-in-quarantine%2Farticleshow%2F74746918.cms&psig=AOvVaw225NMCX96qoDgpUg_stRjx&ust=1621027767493000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiyxpvNx_ACFQAAAAAdAAAAABAD`,
+    image: `https://github.com/PiotrMiszczak/Website-for-personal-trainer/blob/main/src/images/OG.JPG?raw=true`,
   },
   pathPrefix: "/Website-for-personal-trainer",
   plugins: [

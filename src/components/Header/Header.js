@@ -16,18 +16,18 @@ const Header = props => (
           href="https://www.instagram.com/pelcbartlomiej/?hl=pl"
           className="link link-social"
         >
-          <img className="icon icon-social" src={insta}></img>
+          <img alt='instagram' className="icon icon-social" src={insta}></img>
         </a>
         <a
           target="_blank"
           href="https://www.facebook.com/TrenerBartlomiejPelc"
           className=" link link-social"
         >
-          <img className="icon icon-social" src={face}></img>
+          <img alt="facebook" className="icon icon-social" src={face}></img>
         </a>
-        <img className="icon" src={phone}></img>
+        <img alt="phone" className="icon" src={phone}></img>
         <span>731 558 761</span>
-        <img className="icon" src={mail}></img>
+        <img alt="email" className="icon" src={mail}></img>
         <span>pro.pelcu@gmail.com</span>
       </div>
       <div className="header-bottom">
@@ -36,7 +36,7 @@ const Header = props => (
             placeholder="blurred"
             src="../../images/logo.png"
             className="logo"
-            alt="logo icon"
+            alt="logo"
             loading="eager"
           />
           <h1 className="heading-primary">

@@ -43,14 +43,14 @@ function Contact() {
               className="link"
               href="https://www.facebook.com/TrenerBartlomiejPelc"
             >
-              <img className="contact-icon" src={facebook}></img>
+              <img alt='facebook' className="contact-icon" src={facebook}></img>
             </a>
             <a
               target="_blank"
               className="link"
               href="https://www.instagram.com/pelcbartlomiej/?hl=pl"
             >
-              <img className="contact-icon" src={instagram}></img>
+              <img alt='instagram' className="contact-icon" src={instagram}></img>
             </a>
           </div>
         </div>
