@@ -18,7 +18,7 @@ function Seo({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            url
+           
             image
           }
         }
@@ -34,7 +34,7 @@ function Seo({ description, lang, meta, title }) {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: site.siteMetadata?.image,
-    url: site.siteMetadata?.url,
+    
   }
 
   return (
@@ -60,10 +60,7 @@ function Seo({ description, lang, meta, title }) {
           property: `og:image`,
           content: seoValues.image,
         },
-        {
-          property: `og:url`,
-          content: seoValues.url,
-        },
+    
         {
           property: `og:type`,
           content: `website`,
