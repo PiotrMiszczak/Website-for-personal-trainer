@@ -1,108 +1,106 @@
 @import "../../scss/variables";
 
 .header {
-    width: 100%;
-    overflow: hidden;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.304);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.304);
+  overflow: hidden;
+  width: 100%;
+}
+.header-bottom {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0.575rem;
+  width: 100%;
+}
+.header-top {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-weight: normal;
+  height: 15px;
+  padding: 6px;
+}
+
+.heading-container {
+  align-items: center;
+  display: flex;
+  margin-left: 100px;
+  @media (max-width: 720px) {
+    margin-left: 10px;
   }
-  .header-bottom {
-    height: 80px;
-  
-    width: 100%;
-    display: flex;
-    background-color: white;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.575rem;
+}
+
+.heading-primary {
+  display: block;
+  &--main {
+    display: block;
+    font-family: "Exo";
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
   }
-  .header-top {
-    height: 15px;
-    background-color: black;
-    color: white;
-    padding: 6px;
-    display: flex;
-    align-items: center;
+  &--sub {
+    color: $MAIN_THEME;
+    display: block;
+    font-family: "Exo";
+    font-size: 0.9375rem;
     font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.icon {
+  height: 15px;
+  margin-left: 10px;
+  &-social {
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.3);
+      transition: all 0.1s ease-in-out;
+    }
   }
 
-  .link-social {
-    margin-top: 3px;
+  &:last-of-type {
+    margin-right: 5px;
   }
-  .link-blog {
-    font-size: 1.25rem;
-  
-    margin-left: 0;
-    margin-right: 100px;
-    transition: all 0.1s ease-in-out;
-    @media (max-width: 720px) {
-      margin-right: 20px;
-    }
-    &:hover {
-      transform: scale(1.1);
-      color: $MAIN_THEME;
-      transition: all 0.1s ease-in-out;
-    }
-  }
-  .link_wrapper {
-    margin-right: 130px;
-    @media (max-width: 720px) {
-      margin-right: 40px;
-    }
-  }
- 
-  
-  .icon {
-    height: 15px;
-    margin-left: 10px;
-    &-social {
-      transition: all 0.1s ease-in-out;
-      &:hover {
-        transform: scale(1.3);
-        transition: all 0.1s ease-in-out;
-      }
-    }
-  
-    &:last-of-type {
-      margin-right: 5px;
-    }
-  }
-  .logo {
-    height: 70px;
-    width: 70px;
-    @media (max-width: 720px) {
-      height: 60px;
-      width: 60px;
-    }
-  
+}
+
+.link-blog {
+  font-size: 1.25rem;
+  margin-left: 0;
+  margin-right: 100px;
+  @media (max-width: 720px) {
     margin-right: 20px;
   }
-  
-  .heading-primary {
-    display: block;
-    &--main {
-      display: block;
-      font-family: "Exo";
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 1.25rem;
-    }
-    &--sub {
-      display: block;
-      font-family: "Exo";
-      font-weight: normal;
-      text-transform: uppercase;
-      font-size: 0.9375rem;
-      letter-spacing: 1px;
-      color: $MAIN_THEME;
-    }
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    color: $MAIN_THEME;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
   }
-  
-  .heading-container {
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
-  
-    @media (max-width: 720px) {
-      margin-left: 10px;
-    }
+}
+.link-social {
+  margin-top: 3px;
+}
+
+.link_wrapper {
+  margin-right: 130px;
+  @media (max-width: 720px) {
+    margin-right: 40px;
   }
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+  @media (max-width: 720px) {
+    height: 60px;
+    width: 60px;
+  }
+  margin-right: 20px;
+}

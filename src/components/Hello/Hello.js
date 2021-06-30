@@ -12,7 +12,7 @@ const Hello = () => {
         id
         childImageSharp {
           gatsbyImageData(
-            quality: 60
+            quality: 100
             placeholder: TRACED_SVG
             layout: FULL_WIDTH
             backgroundColor: "black"

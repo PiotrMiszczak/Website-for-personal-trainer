@@ -1,18 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;400;600;900&display=swap");
 @import "variables";
 
-body {
-  padding: 0;
-  margin: 0 auto;
-  font-family: "Exo";
-  min-height: 100vh;
-  height: 100%;
-  min-width: 300px;
-}
 html {
-  scroll-behavior: smooth;
-  font-size: 16px;
   box-sizing: border-box;
+  font-size: 16px;
   @media (max-width: 720px) {
     font-size: 14px;
   }
@@ -25,52 +16,60 @@ html {
   @media (min-width: 1400px) {
     font-size: 22px;
   }
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Exo";
+  height: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-width: 300px;
+  padding: 0;
 }
 
 .article-post {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  padding: 2rem;
-  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 80vw;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  &--image {
+    height: 50vh;
+    width: 100%;
+  }
 
   &--text {
-    width: 100%;
-    line-height: 2rem;
     letter-spacing: 2px;
+    line-height: 2rem;
+    width: 100%;
   }
   &--title {
+    color: $MAIN_THEME;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: $MAIN_THEME;
-  }
-  &--image {
-    width: "100%";
-    height: "50vh";
   }
 }
 .blog {
-  padding: 1rem;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
+  padding: 1rem;
   @media (max-width: 530px) {
     padding: 0;
   }
+  justify-content: flex-start;
 }
 
 .footer {
-  padding: 1rem;
+  border-top: 1px solid grey;
   color: grey;
   margin: 0 auto;
+  padding: 1rem;
   width: 80%;
-  border-top: 1px solid grey;
-
   & p {
     text-align: center;
   }
@@ -80,19 +79,15 @@ html {
   color: $MAIN_THEME;
   font-size: 2.25rem;
   font-weight: normal;
-  margin-top: 16px;
-
   margin: 0 auto;
+  margin-top: 16px;
   text-align: center;
-
   text-transform: uppercase;
 }
 .link {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
-
-
 
 [data-aos="new-animation-left"] {
   opacity: 0;
@@ -127,4 +122,3 @@ html {
     }
   }
 }
-// <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

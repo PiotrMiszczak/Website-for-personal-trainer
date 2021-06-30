@@ -1,68 +1,65 @@
 @import "../../scss/variables";
 .offer {
-    margin-top: 20px;
-    display: block;
-    &-content {
-      background-color: #222;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding: 3.125rem 4rem;
-      margin-top: 32px;
-  
-      @media (max-width: 880px) {
-        display: block;
-        padding: 3.125rem 2rem;
-      }
-    }
-    &-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: stretch;
-      background-color: white;
-      flex-basis: 30%;
-      width: auto;
-      padding: 1rem;
-      padding-bottom: 2rem;
-      margin-right: 4px;
-      margin-left: 4px;
-      box-shadow: 0 40px 40px hsla(0, 1%, 20%, 0.3);
-      border-radius: 10px;
-  
-      @media (max-width: 880px) {
-        width: 70%;
-        margin: 0 auto;
-        margin-bottom: 12px;
-        padding-bottom: 1rem;
-      }
-      & p {
-        text-align: center;
-        color: $MAIN_THEME;
-        font-weight: bolder;
-        letter-spacing: 3px;
-      }
-    }
-    &-image {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-  
+  display: block;
+  margin-top: 20px;
+
+  &-content {
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 32px;
+    padding: 3.125rem 4rem;
+    @media (max-width: 880px) {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    &-list {
-      list-style-image: url(../../images/Vector.svg);
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      flex-grow: 1;
-      
-      justify-content: space-around;
-  
-      &--item {
-        margin-bottom: 5px;
-      }
-     
+      padding: 3.125rem 2rem;
     }
   }
-  
+  &-image {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    width: 100%;
+  }
+  &-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 40px 40px hsla(0, 1%, 20%, 0.3);
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    width: auto;
+
+    @media (max-width: 880px) {
+      margin: 0 auto;
+      margin-bottom: 12px;
+      padding-bottom: 1rem;
+      width: 70%;
+    }
+    & p {
+      color: $MAIN_THEME;
+      font-weight: bolder;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    justify-content: space-around;
+    list-style-image: url(../../images/Vector.svg);
+
+    &--item {
+      margin-bottom: 5px;
+    }
+  }
+}

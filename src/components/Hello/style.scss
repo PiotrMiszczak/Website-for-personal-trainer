@@ -1,69 +1,65 @@
 @import "../../scss/variables";
 
 .hello {
-    color: white;
-    height: 90vh;
-    min-height: 400px;
-    padding-bottom: 20px;
-  
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 1000;
-    background: linear-gradient(
-      to left,
-      hsla(0, 0%, 4%, 0.907),
-      hsla(0, 3%, 12%, 0.804)
-    );
-    display: flex;
-  
-    justify-content: flex-end;
-  
-    &-content {
-      width: 50%;
-  
-      margin-right: 6.25rem;
-      margin-top: 60px;
-  
-      @media (max-width: 880px) {
-        margin-right: 20px;
-        margin-top: 20px;
-        width: 80%;
-      }
-      @media (max-height: 500px) {
-        margin-right: 20px;
-        margin-top: 20px;
-        width: 80%;
-      }
-    }
-    &-heading {
+  background: linear-gradient(
+    to left,
+    hsla(0, 0%, 4%, 0.907),
+    hsla(0, 3%, 12%, 0.804)
+  );
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  height: 90vh;
+  margin-bottom: 30px;
+  min-height: 400px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1000;
+
+  &-button {
+    background-color: $MAIN_THEME;
+    border: 2px solid $MAIN_THEME;
+    border-radius: 30px;
+    color: black;
+    font-family: "Exo";
+    font-size: 1rem;
+    font-weight: normal;
+    height: 4rem;
+    transition: all 0.2s ease-in-out;
+    width: 10rem;
+    &:hover {
+      background-color: transparent;
       color: $MAIN_THEME;
-      font-weight: normal;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    &-text {
-      line-height: 2rem;
-      font-size: 1rem;
-    }
-    &-button {
-      font-weight: 600;
-      font-family: "Exo";
-      font-size: 1rem;
-      border: 2px solid $MAIN_THEME;
-      width: 10rem;
-      height: 4rem;
-      border-radius: 30px;
-      background-color: $MAIN_THEME;
-      color: black;
-      font-weight: normal;
       transition: all 0.2s ease-in-out;
-      &:hover {
-        background-color: transparent;
-        color: $MAIN_THEME;
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-      }
+      cursor: pointer;
     }
   }
-  
+
+  &-content {
+    margin-right: 6.25rem;
+    margin-top: 60px;
+    width: 50%;
+
+    @media (max-width: 880px) {
+      margin-right: 20px;
+      margin-top: 20px;
+      width: 80%;
+    }
+    @media (max-height: 500px) {
+      margin-right: 20px;
+      margin-top: 20px;
+      width: 80%;
+    }
+  }
+  &-heading {
+    color: $MAIN_THEME;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  &-text {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}

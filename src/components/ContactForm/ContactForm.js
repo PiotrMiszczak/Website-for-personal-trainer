@@ -16,7 +16,8 @@ function Contact() {
           </h3>
           <form
             method="POST"
-            action="https://getform.io/f/89a40498-60dd-4b75-bf15-e735c847ad23"
+            netlify
+            name="contact"
             className="contact-form"
           >
             <label className="contact-input" htmlFor="name">
